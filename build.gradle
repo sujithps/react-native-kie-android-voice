@@ -48,7 +48,7 @@ allprojects {
         google()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
-            url "/Users/sujiths/Documents/Psnl/kiebot_mob/node_modules/react-native/android"
+            url "$rootDir/../node_modules/react-native/android"
         }
     }
 }

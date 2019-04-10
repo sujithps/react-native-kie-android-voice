@@ -182,10 +182,10 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
 
         ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
         boolean foundMatch = false;
-        String matchingWord = "";
+        String matchingWord = matches.get(0);
         for (String result : matches) {
-            matchingWord = result;
             if (expectedText.trim().equalsIgnoreCase(result)) {
+                matchingWord = result;
                 foundMatch = true;
                 break;
             }
